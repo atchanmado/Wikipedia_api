@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Zilla+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wikipedia</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/d/de/Wikipedia-logo_%28inverse%29.png"
+          alt="Wikipedia Logo"
+          width="200"
+          class="header__image"
+        />
+
+        <h1 class="header__title">WIKIPEDIA API</h1>
+        <form class="search-form">
+          <button type="submit" class="icon search-ico">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input
+            type="search"
+            class="search-input"
+            autofocus="true"
+            spellcheck="false"
+          />
+          <a
+            href="https://en.wikipedia.org/wiki/Special:Random"
+            rel="noopener"
+            target="_blank"
+          >
+          </a>
+        </form>
+      </header>
+      <section class="results"></section>
+    </div>
+
+    <div class="results">
+      <div id="results" class="results__items"></div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</html>
