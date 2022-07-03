@@ -8,7 +8,7 @@ function gererSoumettre(e) {
 }
 
 function getResults(meta) {
-  const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&origin=*&srlimit=10&utf8=&format=json&srsearch=>${meta}`;
+  const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&origin=*&srlimit=10&utf8=&format=json&srsearch=${meta}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
